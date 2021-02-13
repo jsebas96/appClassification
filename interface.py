@@ -62,7 +62,7 @@ def main():
                                 <h3>Cámara Activa</h3>
                     </div>''', unsafe_allow_html=True)
         FRAME_WINDOW = col1.image([])
-        camera = cv2.VideoCapture(2) # 0 corresponde al índice de la cámara
+        camera = cv2.VideoCapture(0) # 0 corresponde al índice de la cámara
 
         col2.write('''<div style="margin-top:25%;"> </div>''', unsafe_allow_html=True)
         capture = col2.button('Tomar Foto', key="2")
